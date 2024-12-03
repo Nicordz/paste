@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+	background-image:  url(cecyto.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 80px;
+}
+@font-face{
+  font-family: letra1;
+  src: url(letra1.ttf);
+}
+header {
+    background-color: #361126;
+    color: rgb(250, 226, 248);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+h1 {
+  font-family: letra1;
+	font-size: 6.5em;
+  line-height: 150%;
+	margin: 10px 0;
+	text-align: center;
+	font-weight: 300;
+  color: #1b110c;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+	background: #c7a89e;
+	color: white;
+	height: 80px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #9a8ba1;
+	}
+	
+	#logo-header .site-name {
+    font-family: letra1;
+		display: block;
+		font-weight: 700;
+		font-size: 2.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+    nav {
+        float: right;
+    }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding-right: 20px;
+        }
+        
+            nav ul li {
+                display: inline-block;
+                line-height: 80px;
+            }
+                
+                nav ul li a {
+                    display: block;
+                    padding: 0 10px;
+                    text-decoration: none;
+                }
+                
+                    nav ul li a:hover {
+                        background: #9a8ba1;
+                    }
+        
+.card-container {
+    overflow: hidden; /* Para limpiar el flotado */
+}
+
+.card {
+    position: relative;
+    top: 31px; 
+    left: 2%;
+    float: left;
+   
+    margin-right: 40px; /* Espacio entre las tarjetas */
+    margin-bottom: 40px; /* Espacio en la parte inferior */
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño */
+    width: 30em;
+    height: 26.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfc5c5;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+
+
+  .card::after {
+    content: "Comprar";
+    padding-top: 1.20em;
+    padding-left: 2.25em;
+    position: absolute;
+    left: 0px;
+    bottom: 60px;
+    background: #bdabab;
+    color: #fcf9f9;
+    height: 2.5em;
+    width: 92.5%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  .card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  .card:active::after {
+    content: "Gracias por tu compra!";
+    height: 3.125em;
+  }
+  
+  .text {
+    max-width: 65px;
+  }
+  
+  .image {
+    background: rgb(248, 248, 248);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  } 
+  .image img {
+    width: 510px;
+    height: 360px;
+    object-fit: cover;
+}
+
+    
